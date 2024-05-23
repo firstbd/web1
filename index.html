@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <style>
+    .nav {
+      height: 70px;
+      width: 100%;
+      border-bottom: 1px solid black;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-right-items {
+      display: flex;
+      margin-left: auto;
+      font-weight: bold;
+
+    }
+
+    .nav-company-name {
+      display: flex;
+
+
+    }
+
+    .nav-item {
+      margin-left: 10px;
+    }
+
+    .title {
+      text-align: center;
+
+      font-weight: bold;
+    }
+
+    .main {
+      width: 800px;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+
+    .prices {
+      display: flex;
+
+    }
+
+    .price-item-detail {
+      height: 100px;
+      margin-top: 5px;
+
+    }
+
+    .price-item {
+      width: 300px;
+      height: 420px;
+      border: 1px solid black;
+      margin: 20px;
+      border-radius: 4px;
+
+    }
+
+    .environment_information-button {
+      color: #007bff;
+      background-color: transparent;
+      background-image: none;
+      border-color: #007bff;
+      padding: .5rem 1rem;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      border-radius: .3rem;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <div class="nav">
+    <div class="company-name">
+      <div class="nav-item">
+        
+                        <a class="btn btn-primary btn-xl text-uppercase" href="#" onclick="return confirmClose();">메인으로 이동하기</a>
+
+        <script>
+        function confirmClose() {
+            if (confirm("메인 페이지로 이동하시겠습니까?")) {
+                window.location.href = "https://welcome1.i25804311.repl.co/"; // 원하는 메인 페이지 URL로 변경하세요.
+            }
+            return false; // 링크의 기본 동작을 막습니다.
+        }
+        </script>
+      </div>
+    </div>
+    <div class="nav-right-items">
+      <div class="nav-item">해외 환경문제 사이트</div>
+    </div>
+
+  </div>
+  <div class="main">
+    <div class="title">
+      해외 환경문제
+    </div>
+    <div class="prices">
+      <div class="price-item">
+        <div class="price-item-title" style="text-align:center;">
+          <img
+            src="data:image/jpeg;base64,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"
+            witdh="200" height="200">
+        </div>
+        <div class="price-item-price">
+          <strong>
+          <span id="cation_1_title">
+            세계대기오염 뉴스 검색 결과
+          </span>
+          </strong>
+        </div>
+        <div class="price-item-detail">
+          <span id="cation_1_description">
+            대기오염 따른 심혈관질환 '주의보'
+          </span>
+        </div>
+        <div class="price-item-detail-button" style="text-align:center;vertical-align: :center;">
+          <button id="environment_information-button1" class="environment_information-button">뉴스보러가기</button>
+          <a id="environment_information-a1" style="display:none;" target='_blank' href="http://www.monews.co.kr/news/articleView.html?idxno=323454"></a>
+          <script>
+            $("#environment_information-button1").click(function () {
+              $('#environment_information-a1').get(0).click();
+            });
+          </script>
+        </div>
+      </div>
+      <div class="price-item">
+        <div class="price-item-title" style="text-align:center;">
+          <img src="https://www.shutterstock.com/image-vector/trash-polluted-planet-earth-sad-250nw-1376639873.jpg"
+            witdh="200" height="200">
+        </div>
+        <div class="price-item-price">
+          <strong>
+          <span id="cation_2_title">
+            세계수질오염 뉴스 검색 결과
+          </span>
+          </strong>
+        </div>
+        <div class="price-item-detail">
+          <span id="cation_2_description">
+            “인간이 미안해”…멸종위기 분홍돌고래 100여 마리 떼죽음, 원인은?
+          </span>
+        </div>
+        <div class="price-item-detail-button" style="text-align:center;vertical-align: :center;">
+          <button id="environment_information-button2" class="environment_information-button">뉴스보러가기</button>
+          <a id="environment_information-a2" style="display:none;" target='_blank' href="https://nownews.seoul.co.kr/news/newsView.php?id=20231001601004&wlog_tag3=naver"></a>
+          <script>
+            $("#environment_information-button2").click(function () {
+              $('#environment_information-a2').get(0).click();
+            });
+          </script>
+        </div>
+      </div>
+      <div class="price-item">
+        <div class="price-item-title" style="text-align:center;">
+          <img
+            src="https://png.pngtree.com/png-clipart/20210307/ourlarge/pngtree-earth-air-pollution-vegetation-destruction-clipart-png-image_3012953.jpg"
+            witdh="200" height="200">
+        </div>
+        <div class="price-item-price">
+          <strong>
+          <span id="cation_3_title">
+            세계토양오염 뉴스 검색 결과
+          </span>
+          </strong>
+        </div>
+        <div class="price-item-detail">
+          <span id="cation_3_description">
+            물-대기오염-토양오염, 세계 사망원인 40%
+          </span>
+        </div>
+        <div class="price-item-detail-button" style="text-align:center;vertical-align: :center;">
+          <button id="environment_information-button3" class="environment_information-button">뉴스보러가기</button>
+          <a id="environment_information-a3" style="display:none;" target='_blank' href="https://n.news.naver.com/mnews/article/003/0000534332?sid=102"></a>
+          <script>
+            $("#environment_information-button3").click(function () {
+              $('#environment_information-a3').get(0).click();
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
